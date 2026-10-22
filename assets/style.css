@@ -95,7 +95,7 @@ section { margin: 48px 0; }
 .hero .wrap { position: relative; padding-top: 96px; padding-bottom: 96px; text-align: center; }
 .hero h1 { color: #ffffff; margin-bottom: .5em; }
 .hero .latin { letter-spacing: .2em; text-transform: uppercase; font-size: .85rem; opacity: .7; margin-bottom: 1.6em; }
-.hero .thesis { font-family: var(--serif); font-size: clamp(1.2rem, 3.4vw, 1.6rem); font-style: italic; margin: 0; }
+.hero .thesis { font-family: var(--serif); font-size: clamp(1.1rem, 3vw, 1.45rem); font-style: italic; line-height: 1.55; margin: 0; }
 
 .page-head { padding: 56px 0 8px; }
 .page-head .kicker { text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; color: var(--muted); margin-bottom: .4em; }
@@ -107,7 +107,7 @@ section { margin: 48px 0; }
 
 /* intro with photo */
 .intro { display: grid; grid-template-columns: 200px 1fr; gap: 28px; align-items: start; }
-@media (max-width: 640px) { .intro { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .intro { grid-template-columns: 1fr; } .intro .photo { max-width: 240px; margin: 0 auto; width: 100%; } }
 .photo {
   aspect-ratio: 4 / 5; border-radius: var(--radius); background: var(--line);
   display: flex; align-items: center; justify-content: center; text-align: center;
