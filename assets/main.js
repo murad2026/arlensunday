@@ -214,3 +214,14 @@ function renderLegend(container, hideChores) {
 
   sync();
 })();
+
+// Jubilee banner: shows itself on 8 November 2026 and hides after the month ends.
+// Add ?60 to the address to preview it earlier.
+(function () {
+  var el = document.getElementById('jubilee');
+  if (!el) return;
+  var now = new Date();
+  var from = new Date(2026, 10, 8);
+  var to = new Date(2026, 11, 1);
+  if ((now >= from && now < to) || /[?&]60\b/.test(location.search)) el.hidden = false;
+})();

@@ -179,3 +179,18 @@ ol.questions li { margin-bottom: .5em; }
 .site-foot { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
 .site-foot .wrap-wide { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
 .site-foot a { color: var(--muted); }
+
+/* jubilee */
+.jubilee { display: flex; justify-content: space-between; gap: 12px; align-items: center; background: #c8963e; color: #1b1406; text-decoration: none; padding: 14px 16px; font-size: 1.02rem; }
+.jubilee[hidden] { display: none; }
+.jubilee span:first-child { max-width: var(--max); margin: 0 auto; flex: 1; text-align: center; }
+.jubilee:hover { filter: brightness(1.06); }
+.big-60 { font-size: clamp(5rem, 22vw, 9rem); line-height: 1; margin-bottom: .15em; }
+.strip { list-style: none; padding: 0; margin: 32px 0 8px; display: grid; grid-template-columns: repeat(auto-fit, minmax(84px, 1fr)); gap: 8px; }
+.strip li { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 8px; text-align: center; font-size: .85rem; color: var(--muted); }
+.strip b { display: block; color: var(--text); font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.greetings { display: grid; gap: 16px; }
+.greeting { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
+.greeting blockquote { margin: 0 0 10px; font-family: var(--serif); font-size: 1.08rem; }
+.greeting figcaption { color: var(--muted); font-size: .92rem; }
+.greeting img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; float: right; margin: 0 0 8px 12px; }
