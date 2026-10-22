@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Личная конституция — Арлен Сандей</title>
+<meta name="description" content="Личная конституция: из каких частей состоит жизнь человека, как меняются их пропорции и как увидеть свой состав за обычную неделю.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,500;0,600;1,400;1,500&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap-wide">
+    <a class="brand" href="index.html">Арлен Сандей</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Меню</button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Главная</a>
+      <a href="story.html">История</a>
+      <a href="constitution.html" aria-current="page">Конституция</a>
+      <a href="creativity.html">Творчество</a>
+      <a href="work.html">Дела</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <div class="kicker">Личная конституция · v1.0</div>
+    <h1>Из чего состоит ваша жизнь</h1>
+  </div>
+
+  <section>
+    <p>Спросите человека, кто он, и он обычно назовёт профессию. Но работа — только одна часть жизни. Есть ещё семья, здоровье, интересы, забота о близких, отдых, друзья, отношения с природой и животными. Из всего этого и состоит человек.</p>
+    <p>Пропорции меняются. В тридцать лет работа может занимать большую часть недели, в шестьдесят — меньше. После рождения ребёнка или болезни родителей всё сдвигается. Плохо не то, что пропорции меняются, а то, что мы этого не замечаем, и одна часть тихо съедает остальные.</p>
+    <p>Личная конституция — способ увидеть свой состав сейчас и решить, что бы вы хотели поправить. Медленно, по шагу, без революций. Мы не говорим «бросьте работу» и не говорим «превратите хобби в бизнес». Мы предлагаем посмотреть.</p>
+  </section>
+
+  <div class="verse">
+    <p>Хочу пожить, не только выжить,<br>
+    мечтаю спать спокойным сном,<br>
+    К своим желаньям стать поближе,<br>
+    всё будет, может быть, ПОТОМ!</p>
+    <cite>«Потом», 2021</cite>
+  </div>
+
+  <section>
+    <h2>Пример: моя неделя</h2>
+    <p>Так менялся состав моей жизни — до пожара, сейчас и каким я хотел бы его видеть.</p>
+    <div class="bars" id="arlen-bars"></div>
+    <div class="legend" id="arlen-legend"></div>
+    <p class="note" style="margin-top:12px"><span class="todo">Цифры условные — заменим ответами Арлена из анкеты.</span></p>
+    <p><span class="todo">Одна-две фразы Арлена: что изменилось сильнее всего и было ли это решением.</span></p>
+  </section>
+
+  <section>
+    <h2>Составьте свою</h2>
+    <p>Проценты сразу назвать почти невозможно, а часы за обычную неделю вспомнить легко. В неделе 168 часов; без сна остаётся примерно 115–120. Разложите их по частям жизни — проценты посчитаются сами.</p>
+    <ul>
+      <li>У каждого часа одна главная часть: ужин с семьёй — это «семья», даже если вы едите.</li>
+      <li>Если делаете два дела сразу — отдайте час тому, ради чего вы это делали.</li>
+      <li>Дорогу, уборку и бумажки пишите в «быт» — иначе часы не сойдутся.</li>
+      <li>Заполните три раза: как было раньше, как сейчас и как хотелось бы.</li>
+    </ul>
+    <div class="tool">
+      <div class="tabs" id="hours-tabs" role="tablist" aria-label="Какую неделю заполняем"></div>
+      <form id="hours-form" onsubmit="return false">
+        <div id="hours-fields"></div>
+        <div class="total" id="hours-total" aria-live="polite"></div>
+      </form>
+      <h3>Ваш состав</h3>
+      <div class="bars" id="hours-bars"></div>
+      <div class="legend" id="hours-legend"></div>
+      <p style="margin-top:12px">
+        <label><input type="checkbox" id="hide-chores" checked> Не показывать быт на полосах</label>
+      </p>
+      <p class="note">Ответы остаются только в вашем браузере и никуда не отправляются. <button type="button" id="hours-reset" class="btn-ghost btn" style="padding:4px 12px;font-size:.85rem">Очистить</button></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Вопросы для себя</h2>
+    <ol class="questions">
+      <li>Какая часть выросла, хотя вы этого не выбирали?</li>
+      <li>Что исчезло последним — и заметили ли вы это?</li>
+      <li>Какая часть занимает в голове гораздо больше места, чем по часам?</li>
+      <li>Если работа завтра пропадёт, что останется?</li>
+      <li>На что вы тратите время, хотя не хотите?</li>
+      <li>Что вы откладываете «на потом» дольше года?</li>
+      <li>Кому, кроме вас, станет лучше, если пропорции изменятся?</li>
+      <li>Какой один шаг на 5% вы готовы сделать в этом месяце?</li>
+    </ol>
+  </section>
+
+  <div class="verse">
+    <p>Жизнь разделена годами,<br>
+    в ней мы разные совсем!<br>
+    Выбирая путь свой сами<br>
+    мы проходим сотни тем!</p>
+    <cite>«Пять этапов жизни», 2025</cite>
+  </div>
+
+  <section>
+    <h2>С чего всё начинается</h2>
+    <p>Прежде чем считать часы, стоит признать простое: у вас есть право хотеть того, чего вы хотите. Право на отдых, на интерес, на заботу о близких, на тишину. И то же право есть у других — включая животных и природу, без которых нашей жизни просто нет. Конкретика появляется уже потом.</p>
+  </section>
+
+  <section>
+    <h2>Личная и общая</h2>
+    <p>Личная конституция — о том, как один человек устраивает свою жизнь. Но у всех нас есть и общая основа: права, которые нельзя отнять, и ответственность перед живой планетой.</p>
+    <p>Эту общую часть мы с <span class="todo">имя соавтора</span> записали в черновик Всемирной конституции — прежде всего в статье 0 о неотъемлемых правах и статье 16 «Живая планета». Это не принятый документ, а предложение, которое вправе переписать сами подписавшие.</p>
+    <p><a class="btn btn-ghost" href="https://theworldconstitution.org/#constitution">Черновик Всемирной конституции →</a></p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap-wide">
+    <span>© 2026 Arlen Sunday</span>
+    <span><a href="https://sundaypoetry.com">sundaypoetry.com</a> · <a href="https://american-zoo.com">american-zoo.com</a> · <a href="https://theworldconstitution.org">theworldconstitution.org</a></span>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
