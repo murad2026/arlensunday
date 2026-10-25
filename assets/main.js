@@ -16,7 +16,7 @@
   var ctx = canvas.getContext('2d');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var width, height, waves = [];
-  var colors = ['rgba(80,255,180,0.07)', 'rgba(0,180,255,0.07)', 'rgba(180,80,255,0.07)'];
+  var colors = ['rgba(10,111,219,0.05)', 'rgba(90,170,240,0.07)', 'rgba(150,200,255,0.09)'];
 
   function resize() {
     var r = canvas.getBoundingClientRect();
