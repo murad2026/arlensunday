@@ -221,3 +221,35 @@ function renderLegend(container, hideChores) {
   if (!el) return;
   if (new Date() >= new Date(2026, 11, 1)) el.hidden = true;
 })();
+
+// Video Q&A on the constitution page. Paste a YouTube video id into `video` to show it.
+(function () {
+  var el = document.getElementById('qa');
+  if (!el) return;
+  var QA = {
+    work:     { q: 'Сколько работы — достаточно?', video: '' },
+    care:     { q: 'Как заботиться о других и не потерять себя?', video: '' },
+    family:   { q: 'Что семья получает от тебя, кроме денег?', video: '' },
+    friends:  { q: 'Зачем взрослому человеку друзья?', video: '' },
+    health:   { q: 'Когда здоровье становится главным?', video: '' },
+    rest:     { q: 'Чем отдых отличается от безделья?', video: '' },
+    fun:      { q: 'Развлекаться — это нормально?', video: '' },
+    hobby:    { q: 'Должно ли хобби приносить деньги?', video: '' },
+    creative: { q: 'Зачем писать стихи, если ты не поэт?', video: '' },
+    nature:   { q: 'Что мы должны животным и природе?', video: '' },
+    study:    { q: 'Не поздно ли учиться в шестьдесят?', video: '' },
+    chores:   { q: 'Как не дать быту съесть жизнь?', video: '' }
+  };
+  COMPONENTS.forEach(function (c) {
+    var item = QA[c.key];
+    if (!item) return;
+    var card = document.createElement('div');
+    card.className = 'card qa-card';
+    var media = item.video
+      ? '<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/' + item.video + '" title="' + item.q + '" loading="lazy" allowfullscreen></iframe></div>'
+      : '<div class="video video-empty"><span class="todo">видео</span></div>';
+    card.innerHTML = '<span class="tag" style="border-color:' + c.color + '">' + c.name + '</span>' +
+      '<h3>' + item.q + '</h3>' + media;
+    el.appendChild(card);
+  });
+})();
